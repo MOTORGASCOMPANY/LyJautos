@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="icon" type="image/png" href="{{ asset('images/mtg.png') }}"/>
+        <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}"/>
 
-        <title>MOTORGAS COMPANY®</title>
+        <title>L&J®</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -24,7 +24,7 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
             <div class="text-xs text-slate-700 -mt-4 float-right">
-                Powered by ECRDEV ®
+                Powered by GHFDEV ®
             </div>
         </div>
         @livewireStyles

@@ -1,19 +1,17 @@
 <x-guest-layout>
-    <!-- source:https://codepen.io/owaiswiz/pen/jOPvEPB -->
     <div class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
         <div class="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1">
 
             <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
                 <div class="flex justify-center animate-bounce">
-                    <img src="{{ asset('images/images/logo.png') }}" width="220" height="120" />
-                </div>                
+                    <img src="{{ asset('images/images/logo.jpg') }}" width="220" height="120" />
+                </div> 
 
                 <div class="flex flex-col items-center">
                     <div class="w-full flex-1 mt-8">
-                        <!-- Inicie con google -->
                         <div class="flex flex-col items-center">
                             <button
-                                class="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-orange-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                                class="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-gray-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                                 <div class="bg-white p-2 rounded-full">
                                     <svg class="w-4" viewBox="0 0 533.5 544.3">
                                         <path
@@ -35,7 +33,6 @@
                                 </span>
                             </button>
                         </div>
-                        <!-- Inicie con correo electronico -->
                         <div class="my-12 border-b text-center">
                             <div
                                 class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
@@ -48,16 +45,16 @@
                                 @csrf
 
                                 <input id="email" name="email" :value="old('email')" required autofocus
-                                    class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-orange-300 focus:ring focus:ring-orange-200 focus:bg-white"
+                                    class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none **focus:border-gray-500 focus:ring focus:ring-gray-300** focus:bg-white"
                                     type="email" placeholder="Correo" />
                                 <input id="password" name="password" required
-                                    class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-orange-300 focus:ring focus:ring-orange-200 focus:bg-white mt-5"
+                                    class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none **focus:border-gray-500 focus:ring focus:ring-gray-300** focus:bg-white mt-5"
                                     type="password" placeholder="Contraseña" />
 
                                 <div class="flex items-center justify-between mt-4">
                                     <label for="remember_me" class="flex items-center">
                                         {{--<x-jet-checkbox id="remember_me" name="remember" />--}}
-                                        <input type="checkbox" id="remember_me" name="remember" class="text-orange-500 focus:ring-orange-400 border-gray-300 rounded">
+                                        <input type="checkbox" id="remember_me" name="remember" class="**text-gray-700 focus:ring-gray-500** border-gray-300 rounded">
                                         <span class="ml-2 text-sm text-gray-600">{{ __('Recordar') }}</span>
                                     </label>
 
@@ -69,7 +66,7 @@
                                     @endif
                                 </div>
                                 <button id="loginButton" type="submit"
-                                    class="mt-5 tracking-wide font-semibold bg-orange-400 text-white-500 w-full py-4 rounded-lg hover:bg-orange-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                                    class="mt-5 tracking-wide font-semibold bg-gray-700 text-white w-full py-4 rounded-lg hover:bg-gray-900 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                                     <svg class="w-6 h-6 -ml-2" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
@@ -97,9 +94,9 @@
                 </div>
             </div>
 
-            <div class="flex-1 bg-orange-100 text-center hidden lg:flex">
+            <div class="flex-1 bg-gray-200 text-center hidden lg:flex">
                 <div class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat">
-                    <img src="{{ asset('images/background2.svg') }}" />
+                    <img src="{{ asset('images/background.svg') }}" />
                 </div>
             </div>
         </div>

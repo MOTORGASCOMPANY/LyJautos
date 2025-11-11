@@ -31,18 +31,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
     </style>
 
     <!-- Navbar start -->
-    <nav id="navbar"
-        class="fixed top-0 z-40 flex w-full flex-row justify-between bg-gray-500 px-4 shadow-lg border-b border-gray-200">
-        {{--
-    <ul class="breadcrumb hidden flex-row items-center py-4 text-lg text-white sm:flex">
-        <li class="inline">
-            <a href="#">Main</a>
-        </li>
-        <li class="inline">
-            <span>Homepage</span>
-        </li>
-    </ul>
-    --}}
+    <nav id="navbar" class="fixed top-0 z-40 flex w-full flex-row justify-between bg-gray-500 px-4 shadow-lg border-b border-gray-200">
         <button id="btnSidebarToggler" type="button" class="py-4 text-2xl text-white hover:text-black">
             <svg id="navClosed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="h-8 w-8">
@@ -54,7 +43,7 @@ Change class "fixed" to "sticky" in "navbar" (l. 33) so the navbar doesn't hide 
             </svg>
         </button>
         <a href="{{ route('dashboard') }}" class="py-2 h-1/2">
-            <img src="{{ asset('images/images/logo.png') }}" width="120" />
+            <img src="{{ asset('images/logo.png') }}" width="100" />
         </a>
 
 

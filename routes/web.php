@@ -119,29 +119,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-/*
 Route::get('/', function () {
     return redirect()->to('/login');
-});*/
+});
 
 //Route::get('register',[Auth::class, 'showLoginForm'])->name('register');
-
-
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('index', function () {
-    return view('index');
-});
-Route::get('about', function () {
-    return view('about');
-});
-Route::get('services', function () {
-    return view('services');
-});
-Route::get('contact', function () {
-    return view('contact');
-});
 
 
 // Rutas para QR (ver PDF) Anual-GNV
@@ -229,7 +211,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::get('/Memorando/{memoId}', VistaSolicitudMemorando::class)->name('vistaSolicitudMemorando');
         Route::get('/SolicitudDevolucion/{anuId}/{matId}/{userId}', VistaSolicitudDevolucion::class)->name('vistaDevolucion');
         Route::get('/Notificaciones', NotificacionesPendientes::class)->name('Notificaciones');
-        //Route::get('/Recepcion-de-materiales',RecepcionMateriales::class)->middleware('can:recepcion')->name('recepcion');
 
         Route::get('/Servicio', Prueba::class)->middleware('can:servicio')->name('servicio');
         Route::get('/ServicioTemporal', ServiciosTemporal::class)->middleware('can:servicioTemporal')->name('servicioTemporal'); //para pruebas de servicio temporal
